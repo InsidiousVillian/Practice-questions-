@@ -1,0 +1,123 @@
+start 
+   Declarations
+   choice 
+   string titleBookOne = "The Great Gatsby"
+   num IDOne = 123456
+   string titleBookTwo = "Harry potter and the sorcerers stone"
+   string authorName = "JK.Rowling"
+   num IDTwo = 789012
+   
+   output " Welcome to your online library " 
+   output " Do u want to choose your book by title, authorName, ID number, book ID or do you want to exit the program ? "
+  
+   if ( choice == exit) 
+   
+   
+   
+   else if (choice == title)
+// Call BookDetails(titleBookOne, titleBookTwo)
+BookDetails(titleBookOne, titleBookTwo)
+
+   else if ( choice == ID number )  
+//Call bookDetails(IDOne, IDTwo)
+bookDetails(IDOne, IDTwo) 
+
+   else if (choice == author name ) 
+//Call bookDetails(authorName, titleBookTwo)
+bookDetails(authorName, titlwBookTwo)
+
+   else if (choice == book ID) 
+//Call bookDetails(IDOne, IDTwo, authorName) 
+bookDetails(IDOne, IDTwo, authorName)
+
+   else 
+   
+   output " that is not a valid answer. Please enter one of the options or exit to end program. " 
+   choice = ReadLine
+
+stop 
+
+
+void BookDetails(titleBookOne, titleBookTwo)
+
+   output " which one do you want? "
+   choice = ReadLine
+   
+   if (choice == Great Gatsby)
+   
+   output " Great Gatsby "
+   
+   else if (choice == Harry potter and the sorcerers stone)
+  
+   output " Harry potter and the sorcerers stone " 
+   
+   else
+    
+   output " no books like that is not in this library" 
+           
+return 
+ 
+ 
+void bookDetails(IDOne, IDTwo) 
+    
+	
+	output " enter the id number of the book"
+	choice = ReadLine
+	
+	
+	if (choice == 123456) 
+	
+	output " The Great Gatsby " 
+	
+	else if ( choice == 789012)
+	
+	output " Harry potter and the sorcerers stone " 
+	
+	else 
+	
+	output " that book is not in this online library " 
+	
+return 
+	
+bookDetails(authorName, titlwBookTwo)
+
+   output " enter the authorName or title of the book "
+   choice = 
+   if (choice == JK Rowling) 
+   
+   output " Harry Potter and the sorcerers stone " 
+   
+   else if (choice == Harry Potter and the sorcerers stone )
+ 
+   output " Harry Potter and the sorcerers stone written by JK Rowling "
+   
+   else 
+ 
+   output " that book or author is not found in this library " 
+ 
+return   
+   
+ 
+void bookDetails(IDOne, IDTwo, authorName)
+     
+    output " by ID there are 2 books " 
+	output " enter the ID number or authorName " 
+	choice = ReadLine
+	if ( choice == 123456 )
+	
+	output " The Great Gatsby " 
+	
+	else if ( choice == 789012)
+	
+	output " Harry potter and the sorcerers stone " 
+	
+	else if ( choice == JK Rowling ) 
+	
+	output " Harry Potter and the sorcerers stone " 
+	
+	else 
+	
+	output " that book is not in this online library " 
+	
+return 
+
