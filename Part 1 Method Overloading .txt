@@ -1,0 +1,56 @@
+learning unit 4 theme 2
+start
+	//Declarations of variables
+		string choice
+		string booksTitleOne = "The Great Gatsby"
+		string booksTitleTwo =  "Harry Potter and the Sarcerer's Stone"
+		num bookIdOne = 123456
+		num bookIdTwo = 789012
+		string authorsNameOne = "J.K Rowling"
+		string authorsNameTwo = "George Orwell"
+		
+	//open the program
+	output "Welcome to the Library"
+	
+	//Prompt User to choose the book they want details on 
+	output "What you wish to retrieve from the Book Details"
+	output A = Title 
+	output B = Identification
+	output C = Author and the Title
+	output D = Identification and the Author
+	input choice
+	
+	if (choice == A)
+		bookDetails(booksTitleOne)
+		
+	else if (choice == B)
+		bookDetails(bookIdOne)
+	
+	else if (choice == C)
+		bookDetails(authorsNameOne, booksTitleTwo)
+	
+	else (choice == D)
+		bookDetails(bookIdTwo, authorsNameTwo)
+stop
+
+void bookDetails(booksTitleOne)
+		ouput "The title of the book is:"
+		output booksTitleOne
+return
+
+void bookDetails(bookIdOne)
+		ouput "The ID of the book is:"
+		output bookIdOne
+return
+
+void bookDetails(authorsNameOne, booksTitleTwo)
+		ouput "The Author and the title of the book is:"
+		output authorsNameOne
+		output booksTitleTwo
+return
+
+void bookDetails(bookIdTwo, authorsNameTwo)
+		ouput "The ID and the Author of the book is:"
+		output bookIdTwo
+		output authorsNameTwo
+return
