@@ -1,0 +1,75 @@
+group members: Jet,Belinda,Sechaba Van Der Merwe
+
+start
+	//Declarations of variables
+		num userNumber []
+		num finalaverage
+		num SIZE = 6
+		num valuesDistance
+		string choice
+	
+	//Set an array to hold values
+	set userNumbers = new num[SIZE]
+
+	//Start the program by asking user if they want to create a set of numbers	
+	output "Welcome to the Arithemtic set Program"          
+	output "Do you wish to enter a set of 6 numbers: YES or NO"
+	input choice
+	
+	//Check the user's choice
+	while (choice == "YES")
+	
+		//Prompt user to enter values for the array
+		for index = 0 to SIZE - 1 step 1
+			output "Please enter your number:"
+			set userNumbers = userNumbers[index]
+			input userNumbers
+		endfor 
+			
+		//Call a method to calculate the average of the values
+		set finalAverage = CalulateArithmaticAverage (userNumbers)
+	
+		//Display the values and show how far it is from the Average
+		DisplayValues(finalAverage,userNumbers)
+		
+		//Reprompt user to enter another set or close program
+		output "Do you wish to enter another set of 6 numbers: YES or NO"
+		input choice
+		
+	endwhile
+	
+	//Display an exit message
+	if (choice == "NO")
+		output "Thank you for your answer. Goodbye."
+	endif
+	
+stop
+
+//Create a method to calculate the average
+num CalulateArithmaticAverage (num average)
+	//Declarations of variables
+		num total = 0
+		num SIZE = 6
+	
+	//Calculate total of input and average
+	for i = 0 to SIZE - 1 step 1
+
+		//total will be all the userNumbers added together to the total
+		total += userNumbers[i]
+		
+	endfor
+	
+	average = total / SIZE
+return average
+
+//Create a method to display how far the values are to the average
+void DisplayValues (num finalAverage, num userNumbers[])
+	//Declarations
+		num valuesDistance
+		
+	//Display the distance of the values to the average
+	for counter = 0 to SIZE - 1 step 1
+		set valuesDistance = finalAverage - userNumber[counter]
+		output userNumber[counter] + " is " + valuesDistance " units away from the Average of your set numbers."
+	endfor
+	
