@@ -1,0 +1,56 @@
+question
+
+Write the pseudocode for an application that will pass the number of games a
+player has played to a module which will calculate the net salary of a player.
+A player earns R70 000 per game and as the players fall within a higher tax bracket,
+they automatically pay 25% tax on their earnings. The net salary will be passed
+back to the mainline logic of the application which will display the net salary of a
+player.
+
+start 
+    Declaration 
+	num basicSalary = 70000 
+	num tax = 0.25 
+	num gamesPlayed
+	num threshhold = 9 
+	
+	
+	    output "how many games have u played this year"
+		gamesplayed = ReadLine 
+//call CalculateNetSalary(gamesPlayed, threshhold, tax)
+num CalculateNetSalary(gamesplayed, threshhold, tax)
+
+    //loop that checks if gamesPlayed is past threshhpld or not and displays diffrent results based off of loop condition
+	
+    if (gamesplayed >= threshholdhreshold)
+	
+	    output " your NetSalary is: " NetSalarytax
+	
+	else if (gamesPlayed <= threshhold) 
+	
+	    output  " your NetSalary is: " NetSalary
+	
+stop 
+
+
+// Method that Calculates the NetSalary of the player
+num CalculateNetSalary(gamesplayed, threshhold, tax)
+    Declarations 
+	NetSalary 
+	
+	if (gamesPlayed >= threshhold)
+	
+	NetSalarytax = (threshhold * basic_salary) + ((games_played - threshholdhreshold) - (basicSalary - (basic * tax) ))
+	
+	else 
+	
+	NetSalary = gamesplayed * basicSalary 
+	
+return NetSalary
+	
+
+	
+
+		
+		
+	
