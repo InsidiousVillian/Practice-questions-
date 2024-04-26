@@ -1,0 +1,81 @@
+Question 
+
+It was decided that if a junior soccer player (under 18) has played at least 10 games
+during the year they will get a R5000 bonus. Each junior player earns a basic rate
+of R24 000 per game that they play.
+Using pseudocode, plan the logic for an application that will:
+- Allow a staff member to enter ‘Yes’ for every game played.
+- Count the number of times the user entered the value ‘Yes’.
+- Determine if the player is eligible for a bonus.
+- Calculate and display the salary of a player.
+- Confirm with the user whether they are eligible for a bonus or not.
+- Include at least four (4) meaningful comments.
+
+start 
+  Declarations  
+  string input 
+  num basicSalary = 24000
+  num bonus = 5000
+  num gamesplayed = 0
+  num salary 
+  num bonusThreshhold = 9 
+  string gamePlayed = "yes" 
+  string exit = "no" 
+  
+  // loop to continuously ask user to enter yes for every game they played and no to stop loop 
+  for (i = 0, i < 40, i++) 
+  
+  output " Enter Yes everytime you played a game this year, enter no once you have entered amount"
+  input = ReadLine 
+  
+        If (input = "Yes") 
+	    gamesplayed = gamesplayed + 1 // incrementing gamesplayed by 1 everytime user inputs yes 
+		
+		else if ( input = "no" ) 
+		
+		output " have a lovely day" 
+		
+		else 
+		
+		output "that is not a valid answer, please try again" 
+		
+	    endif 
+	
+	endfor 
+	
+//call CalculateSalary (gamesplayed, basicSalary, bonus) 
+CalculateSalary (gamesplayed, basicSalary, bonus) 
+
+    if ( gamesplayed >= 10 ) 
+	
+	output "you qualify for a bonus, your final salary is:" finalSalary
+	
+	else 
+	
+	output "you do not qualify for a bonus, your final salary is:" + Salary
+	  
+stop 
+
+CalculateSalary (gamesplayed, basicSalary, bonus, bonusThreshhold) 
+
+   Declaration  
+   num finalSalary 
+   num salary
+   
+   if (gamesplayed > bonusThreshhold )
+   
+   finalSalary = (bonusThreshhold * basicSalary) + ((gamesplayed - bonusThreshhold) * (basicSalary + bonus))
+   
+   else 
+   
+   Salary = gamesplayed * basicSalary
+   
+return finalSalary
+   
+   
+   
+   
+ 
+
+	
+	
