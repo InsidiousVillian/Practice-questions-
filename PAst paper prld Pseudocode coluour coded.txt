@@ -1,0 +1,81 @@
+question 
+represent the pseudocode for the scenario below:
+The sports administrators have decided to give something back to the community.
+They have decided that if an individual purchases more than 10 tickets to the
+event, they will give the customer 10% discount as well as donate R5000 to a local
+charity.
+The total amount due by the customer and confirmation of the donation needs to
+be displayed on the screen.
+If the customer purchases less than 10 tickets, the customer will be thanked for
+their purchase.
+All tickets will be sold at a flat rate of R70 per ticket.
+
+
+
+start 
+  //Declarations
+      num Input    
+      num Discount = 0.10 
+	  num Price = 70  
+	  
+	  
+      output "each ticket is R70, how many tickets would you like to buy "  
+	  input = Convert.ToInt32(ReadLine) 
+	  
+//call method checkTicketsBought
+  checkTicketsBought(input, Price)  
+
+	/loop to see if they qualify for discount 
+
+   if (input >= 10)
+	 
+//call CalculateDiscount( PricePaid, Discount)
+CalculateDiscount(PricePaid, Discount)
+
+//call CalculateDiscount( PricePaid, discountedPrice)
+ CalculateDiscount( PricePaid, discountedPrice)
+ 
+    output " You qualify for a discount, your discounted amount was " + discountedPrice + " your final payment paid is " + FinalPrice
+	 
+	else 
+	 
+	output "you have paid" + pricePaid + " thank you for your purchase have a nice day " 
+	 
+stop  
+	 
+checkTicketsBought(num input, Price)
+
+    Declarations 
+	pricePaid 
+	
+    pricePaid = input * Price 
+
+return pricePaid
+
+
+CalculateDiscount(PricePaid, Discount)
+
+    //Declarations
+	DiscountedPrice
+	
+    discountedPrice = PricePaid - (PricePaid * Discount)
+	
+return discountedPrice
+	
+	
+CalculateDiscount( PricePaid, discountedPrice)
+
+    Declarations
+	FinalPrice  
+	
+	FinalPrice = PricePaid - DiscountedPrice 
+	
+return FinalPrice
+
+	 
+ 	  
+  
+  
+  
+  
+ 
