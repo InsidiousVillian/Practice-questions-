@@ -1,0 +1,45 @@
+question 
+
+Write the pseudocode for an application that will request the user to enter the radius of a circle.
+The radius is the measurement from the centre of the circle to the edge of the circle. The radius
+should then be passed to a method which will use the value of the radius to compute the area of a
+circle. The result of the calculation should be returned to the mainline logic which should display
+the area of the circle. The formula for calculating the area of a circle is:
+The calculation can also be written as: A = 3.14 x (r x r)
+r = radius
+A = area
+π = 3.14 (which is called PI)
+Note: Provide appropriate comments in your pseudocode.
+
+
+// Mainline
+start 
+    Declarations 
+	num radius 
+	num PI = 3.14 
+	
+	    output " enter the radius of a circle 
+		radius = Convert.ToInt32(ReadLine) 
+		
+// Call CalculateArea( radius, PI ) 
+CalculateArea( radius, PI ) 
+
+        output " the area of the circle is:" + Area 
+		
+stop 
+   
+// method 
+CalculateArea( radius, PI )    
+	Declarations 
+	num Area 
+	
+	Area = PI * ( radius * radius ) 
+	
+return Area 
+
+
+    
+     
+	
+
+    
