@@ -1,0 +1,63 @@
+question 
+
+Create the logic for a program that prompts a user for four numbers and stores them in an
+array. Pass the array to a method that calculates the arithmetic average of the numbers and
+returns the value to the calling program.
+Continue to prompt the user for additional sets of four numbers until the user quits
+
+start 
+ 
+    Declarations 
+	num [] numbers = new numbers [4] 
+	num input 
+	num newInput 
+	
+	    while (i < 50)
+		
+		    for loop ( i < numbers.length, i++) 
+		
+		        output "Enter a number" 
+			    input = ReadLine()
+			
+	            //Call method 
+	            CalculateAverage (input) 
+	
+	            output " your average is" + average " do u want to enter an additional sets of number? (enter yes to continue, no to exit" 
+	
+	            if ( input = yes ) 
+			
+			        output " Enter a number " 
+			        newInput = ReadLine 
+			
+			    else 
+			
+			        output " have a nice day" 
+				
+			    endif
+            endfor			
+		endwhile 
+		    
+		
+stop 
+
+    CalculateAverage(input) 
+	
+	Declarations
+	num Average 
+	
+	    Average = input / num [] numbers 
+		
+return average 
+
+	
+	
+			
+
+			
+			
+			
+
+		
+		
+ 
+	
