@@ -1,0 +1,27 @@
+question 
+
+Produce the equivalent ‘for’ loop for the while loop presented below. 
+Make use of pseudocode to formulate your answer.
+
+start
+ Declarations
+ num count 
+ while count < 5
+ output “Hello World”
+ set count = count + 1
+ endwhile
+stop
+
+
+start
+    Declarations
+    num count = 0
+    
+	for (i = 0, i < 5, i++) 
+        output “Hello World”
+		
+        set count = count + 1
+    endfor
+	
+stop
+
