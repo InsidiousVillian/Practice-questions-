@@ -1,0 +1,55 @@
+question 
+
+Write the pseudocode for a program that will continue prompting a user for a
+value whilst the total of all values remain less than 100. The program must keep
+track of the number of times the loop executes and displays the number of
+times the loop executed once the loop had finished executing.
+
+start
+    Declarations 
+	num count 
+	num value 
+	string input 
+	num total 
+	
+	while (count < 100) 
+	
+	    output "enter a number" 
+		value = COnvert.ToInt32(ReadLine) 
+		
+		count ++ 
+		
+		output "if u want to exit, type no"
+		input = ReadLine 
+		
+		if (input = no) 
+		
+		    total += value 
+		
+		    output "your total is:" + total
+		
+		else 
+		
+		    output "enter another number:" 
+			value = COnvert.ToInt32(ReadLine) 
+			
+		endif 
+	endwhile 
+	
+stop 
+		 
+	    
+		
+		
+
+		
+		
+		
+		
+	
+	
+	   
+		
+
+
+
