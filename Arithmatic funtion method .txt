@@ -1,0 +1,57 @@
+question 
+
+Create the logic for a program that performs arithmetic functions. Design the program to:
+• contain two numeric variables
+• prompt the user for values for the variables
+• pass both variables to methods named sum() and difference().
+Create the logic for the methods sum() and difference(); they compute the sum of and
+difference between the values of two arguments, respectively. Each method should perform
+the appropriate computation and display the results.
+
+
+start 
+    
+	Declarations 
+	num numberOne 
+	num numberTwo 
+	
+	output " enter the first number " 
+	numberOne = Convert.ToIn32(ReadLine) 
+	
+	output " enter the second number "
+	numberTwo = Convert.ToIn32(ReadLine)
+	
+	// call method 
+	Sum(numberOne, numberTwo) 
+	
+	//call method 
+	difference(numberOne, numberTwo)
+	
+stop 
+
+void Sum(numberOne, numberTwo)
+    
+	Declarations 
+	num sum 
+	
+	sum = numberOne + numberTwo
+	
+	output "the sum of the numbers is: " + sum 
+	
+return  
+
+void difference(numberOne, numberTwo)
+    Declarations
+	num difference 
+	
+	difference = numberOne - numberTwo
+	
+	output " the difference of the numbers is : " + difference
+	
+return  
+
+	
+
+
+
+
