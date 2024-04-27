@@ -1,0 +1,35 @@
+question 
+
+Using pseudocode, write a method that will add two numbers, and return the sum to the calling
+function.
+Note: The method should receive two numbers as arguments.
+
+start 
+
+    Declarations 
+	num numberOne
+	num numberTwo 
+	
+	output "enter the first number" 
+	numberOne = Convert.ToInt32(ReadLine)
+	
+	output "enter the second number" 
+	numberTwo = Convert.ToInt32(ReadLine)
+	
+	//call method
+	
+	CalculateSum(numberOne, numberTwo) 
+	
+	output " the sum of the 2 numbers is : " + sum 
+
+stop 
+
+
+CalculateSum(numberOne, numberTwo) 
+    Declarations 
+	num sum 
+	
+	sum = numberOne + numberTwo 
+	
+return sum 
+     
