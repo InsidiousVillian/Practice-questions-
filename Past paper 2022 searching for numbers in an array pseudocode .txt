@@ -1,0 +1,56 @@
+question 
+
+Declare an array called ‘numbers’ that will contain the following values:
+16, 5, 3, 24.
+(2)
+• Ask a user whether they would like to search for a particular value. If
+their answer is “Yes”, the application should allow them to enter a search
+value and the array must be searched for that value.
+(16)
+• Display a message indicating if the value was found in the array or not
+
+start 
+
+
+    Declarations 
+	num [] numbers = { 16, 5, 3, 24}
+	string input
+	num userNumber
+	
+	    output " Enter yes if u would like to search an array for a number" 
+		input = ReadLine()
+		
+		if ( input = yes)
+		
+		    output " enter a number that you would like to search for "
+		    userNumber = Convert.ToInt32(ReadLine)
+			
+			if (userNumber = num[]numbers)  
+			
+			    output "the value was found" 
+			
+			else
+			
+			    output  "your value was not found" 
+				
+			endif
+
+		else 
+		
+		    output " have a nice day " 
+			
+		endif 
+		
+stop 
+		
+		
+	
+			
+			
+			
+
+
+	
+    
+			
+			
