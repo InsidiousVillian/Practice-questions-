@@ -1,0 +1,49 @@
+question 
+
+“To help students determine whether they qualify for a supplementary exam, students can enter
+their final module mark and exam mark on a webpage. If the student obtained more than 30% for
+their exam mark and a final mark of less than 50%, the student will be informed that he/she
+qualifies for a supplementary exam.”
+Q.3.1 Write the pseudocode that will prompt a user for the required information and
+accurately represent the logic contained in the scenario provided at the
+beginning of the question
+
+start 
+    Declaration 
+	num finalMark 
+	num examMark 
+	
+	output "enter your exam mark" 
+	examMark = Convert.ToInt32(ReadLine) 
+	
+	output " enter your final module mark " 
+	finalMark = Convert.toInt32(ReadLine) 
+	
+	while ( examMark >= 30 ) 
+	
+	    output "your exam mark is:" + examMark + "you passed !" 
+		
+		if ( finalMark  < 50 ) 
+		
+		    output "you qualify to write the supplementary test" 
+		
+		else if (finalMark > 50 ) 
+		    output "you do not qualify to write the supplementary test" 
+		 
+		else if (examMark < 30) 
+		    output " you failed " 
+		
+		endif 
+	endwhile 
+	
+stop 
+		
+		
+	
+	   
+	
+	
+	
+	
+
+  
