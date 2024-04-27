@@ -1,0 +1,91 @@
+question 
+Create the logic for a program that calculates and displays the amount of money you would
+have if you invested R5 000 at 2 percent interest for one year. Create a separate method
+to do the calculation and return the result to be displayed.
+
+start
+    Declarations 
+    num investment = 5000 
+	num intrest = 0.2 
+	
+    //call CalculateMoney(investment, intrest) 
+	 CalculateMoney(investment, intrest)
+	 
+	 output " the results are" + total 
+	  
+stop 
+
+    
+	CalculateMoney(investment, intrest)
+	
+	    Declarations
+		num total 
+		
+		total = investment + (investment * intrest) 
+		
+return total 
+		
+		
+question 
+
+Modify the program in (a) above so that the main program prompts the user for the amount
+of money and passes it to the interest-calculating method.
+
+start 
+
+    Declarations
+	num input
+	num intrest = 0.2 
+	
+	//call IntrestCalculating( input, intrest ) 
+	IntrestCalculating( input, intrest ) 
+	
+	output " your total is " + total 
+	
+stop 
+
+//call method 
+IntrestCalculating( input, intrest ) 
+	Declarations 
+	num total 
+	
+	total = input + (input * intrest)
+	
+return total 
+
+
+question 
+
+Modify the program in (b) above so that the main program also prompts the user for the
+interest rate and passes both the amount of money and the interest rate to the interestcalculating method.
+
+start 
+    Declarations 
+	num investment 
+	num intrest 
+	
+	output " enter your investment " 
+	investment = Convert.ToInt32(ReadLine) 
+	
+	output " enter your interest "
+	intrest = Convert.ToInt32(ReadLine) 
+	
+//call method 
+IntrestCalculating( investment, intrest ) 
+
+    output " your total is " total 
+
+stop 
+
+IntrestCalculating( investment, intrest ) 
+    Declarations 
+	num total 
+	
+	total = investment + (investment * intrest) 
+	
+return total 
+
+
+	
+	
+	  
