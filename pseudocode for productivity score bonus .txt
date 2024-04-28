@@ -1,0 +1,116 @@
+question 
+
+pseudocode for a program that accepts each salesperson’s data and displays the name and a bonus amount.
+The client confirmed the bonuses will be distributed as follows:
+If the productivity score is 30 or less, the bonus is R25.
+If the productivity score is 31 or more and less than 80, the bonus is R50.
+If the productivity score is 80 or more and less than 200, the bonus is R200.
+If the productivity score is 200 or higher, the bonus is R200.
+
+
+start 
+    Declaration 
+	string [] salesperson’s = new string [40] 
+	num count
+	string input
+	string name
+	string lastName
+	num shiftsWorked 
+	num transactions
+	num randValue 
+	
+	set count = 0 
+	while (salesperson’s < 40) 
+	
+	    output "Enter your first name" 
+	    names = ReadLine()
+	
+	    output "Enter you last name" 
+	    lastName = ReadLine() 
+	
+	    output " how many shift were taken in a month" 
+	    shiftsWorked = Convert.ToInt32(ReadLine) 
+	
+	    output "How many transactions were completed in a month" 
+	    transactions = Convert.ToInt32(ReadLine)
+	
+	    output "What is the rand value of the transactions" 
+	    randValue = Convert.ToInt32(ReadLine) 
+	
+	    output "enter yes to continue no to exit" 
+	    input = ReadLine() 
+		
+		//call method 
+		CalculateProductivityScore(randValue, transactions, shiftsWorked) 
+		
+		//call CalculateBonus( productivityScore) 
+		CalculateBonus( productivityScore) 
+
+	endwhile
+
+	    foreach (salesperson’s in the array) 
+		
+		    output "name:" + name + "lastName:" + lastName "Productivity score:" + productivityScore + ", " + "your bonus based on your productivity is:" + bonus 
+			
+		    If (productivityScore >= 50)
+			
+			    output "***" 
+			
+			else 
+			
+			    output " have a nice day"
+				
+			endif
+				
+		endforeach
+
+stop 
+
+
+CalculateProductivityScore(randValue, transactions, shiftsWorked) 	
+
+    Declaration 
+	num productivityScore 
+	
+	productivityScore = (randValue / transactions) / shiftsWorked
+
+return productivityScore
+	
+	
+CalculateBonus( productivityScore)
+    
+    Declaration
+	num bonusZero = 0 
+	num bonusOne = 50 
+	num bonusTwo = 200 
+	
+	
+	
+	if (productivityScore >= 31) 
+	
+	    bonus = bonusOne 
+		
+		
+	else if (productivityScore >= 80)  
+	
+	    bonus = bonusTwo 
+		
+	else if (productivityScore >= 200 ) 
+	
+	    bonus = bonusTwo
+		
+	else 
+	
+	    bonus = bonusZero
+		
+return bonus 
+		
+
+		
+	
+		
+	
+	
+If the productivity score is 31 or more and less than 80, the bonus is R50.
+If the productivity score is 80 or more and less than 200, the bonus is R200.
+If the productivity score is 200 or higher, the bonus is R200.
