@@ -106,11 +106,3 @@ CalculateBonus( productivityScore)
 return bonus 
 		
 
-		
-	
-		
-	
-	
-If the productivity score is 31 or more and less than 80, the bonus is R50.
-If the productivity score is 80 or more and less than 200, the bonus is R200.
-If the productivity score is 200 or higher, the bonus is R200.
