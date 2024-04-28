@@ -1,0 +1,79 @@
+question 
+
+pseudocode for a program that continuously accepts:
+Each salesperson’s first and last names;
+The number of shifts worked in a month;
+The number of transactions completed in a month and
+The Rand value of those transactions.
+The program must display each salesperson’s name with a productivity score.
+The productivity score must be calculated by first dividing Rands by transactions and then dividing the result by shifts worked.
+If the score is 50 or higher, it must be displayed followed by three asterisks.
+
+start 
+    Declaration 
+	string [] salesperson’s = new string [40] 
+	num count
+	string input
+	string name
+	string lastName
+	num shiftsWorked 
+	num transactions
+	num randValue 
+	
+	set count = 0 
+	while (salesperson’s < 40) 
+	
+	    output "Enter your first name" 
+	    names = ReadLine()
+	
+	    output "Enter you last name" 
+	    lastName = ReadLine() 
+	
+	    output " how many shift were taken in a month" 
+	    shiftsWorked = Convert.ToInt32(ReadLine) 
+	
+	    output "How many transactions were completed in a month" 
+	    transactions = Convert.ToInt32(ReadLine)
+	
+	    output "What is the rand value of the transactions" 
+	    randValue = Convert.ToInt32(ReadLine) 
+	
+	    output "enter yes to continue no to exit" 
+	    input = ReadLine() 
+		
+		//call method 
+		CalculateProductivityScore(randValue, transactions, shiftsWorked) 
+	
+	endwhile
+
+	    foreach (salesperson’s in the array) 
+		
+		    output "name:" + name + "lastName:" + lastName "Productivity score:" + productivityScore 
+			
+		    If (productivityScore >= 50)
+			
+			    output "***" 
+			
+			else 
+			
+			    output " have a nice day"
+				
+			endif
+				
+		endforeach
+
+stop 
+
+
+CalculateProductivityScore(randValue, transactions, shiftsWorked) 	
+
+    Declaration 
+	num productivityScore 
+	
+	productivityScore = (randValue / transactions) / shiftsWorked
+
+return productivityScore	
+	
+	
+	
+	
