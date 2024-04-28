@@ -1,0 +1,85 @@
+question 
+
+ Write the pseudocode for the scenario below.
+A teacher has a class of 10 learners who recently wrote a test. The teacher would like to store both the
+learner’s name and their test mark in an array. However, this is not possible because their names are in
+string format and their marks are numeric. Different data types cannot be stored in one array. This means
+that you need to have two parallel arrays. One array will store the learner’s names and the corresponding
+elements in the other array will be their marks. Verify that the marks input are between 0 and 100. Any
+mark input outside of this range, the user must input the mark until it is within the range. 
+
+start 
+    Declarations 
+	num count 
+	string [] names = { Joe, Mpho, Kyle, Susan, Thando, Refilwe, John, Katlego, Joyce, Sisanda}
+	num [] testMarks = { 68, 56, 43, 49, 76, 80, 50, 75, 63, 44}
+	string [] userNames = new userNames [10]
+	num [] userMarks = new userMarks [10]
+	num totalAttempts = 15 
+	
+	set count = 0 
+	
+	while (count < 15) 
+	
+	    output "what is the learners name" 
+		userNames = Readline()
+		
+		count ++
+		totalAttempts = totalAttempts - 1
+		
+		if (userNames = names.Length) 
+	
+		    output "what is the learners mark, the mark must be between 0 to 100"
+		    userMarks = Connvert.ToInt32(ReadLine) 
+			
+		
+		else 
+		
+		    output "that learner is not in the database, you have a total of:" + count  
+			
+		 
+		
+		endif 
+		
+		if (userMarks < 100) 
+		
+		    output "the number is valid"
+			
+		else  
+		
+		    output "that number is invalid, you have " + count " attempts left before the program closes"
+			
+     	endif
+	endwhile 
+
+		//call method 
+	DisplayInformation(userMarks, userNames) 
+	
+stop
+
+void DisplayInformation(userMarks, userNames) 
+
+
+    if (userMarks >= 75) 
+	
+	    output "learner name:" + userNames + "distinction" 
+		
+	else if (usermarks < 50)
+	
+	    output "learners:" + userNames + " got" + userMarks " failed 
+		
+	else 
+	
+	    output "learners:" + userNames + " got a total of:" + userMarks + " therefore they passed" 
+		
+	endif 
+	
+return 
+		
+	
+
+		
+	
+	
+	
+	
