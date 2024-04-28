@@ -57,17 +57,30 @@ start
      	endif
 	endwhile 
 
-		//call method 
-	DisplayInformation(userMarks, userNames) 
-	
+		 // call method 
+        CalculateAverageMark(testMarks)
+
+                // call method 
+        High(testMarks) 
+
+	 //call method 
+ 	DisplayInformation(userMarks, userNames) 
+
+        output " the highest mark was " + highestMark + " scored by  Refilwe" 
 stop
 
 void DisplayInformation(userMarks, userNames) 
+ Declarations 
+ num count
 
+set count = 0 
+
+while (count < 10)
 
     if (userMarks >= 75) 
 	
-	    output "learner name:" + userNames + "distinction" 
+	    output "learner name:" + userNames + "distinction " 
+     
 		
 	else if (usermarks < 50)
 	
@@ -78,10 +91,38 @@ void DisplayInformation(userMarks, userNames)
 	    output "learners:" + userNames + " got a total of:" + userMarks + " therefore they passed" 
 		
 	endif 
+      endif 
+
+    
 	
 return 
-		
-	
+
+ CalculateAverageMark(userMarks) 
+
+        Declarations 
+        num average 
+
+        userMarks += userMarks[10] 
+
+        average = (usermarks / 10) * 100 
+
+return average
+
+High(testMarks)
+highestMark = 80
+highestMarkLearner =  Refilwe
+
+output " the highest mark was:" + highestMark + " this was scored by:" + highestMarkLearner
+
+
+
+
+        
+        
+
+       
+
+
 
 		
 	
