@@ -109,12 +109,12 @@ return
 return average
 
 High(testMarks)
-highestMark = 80
-highestMarkLearner =  Refilwe
+       highestMark = 80
+       highestMarkLearner =  Refilwe
 
-output " the highest mark was:" + highestMark + " this was scored by:" + highestMarkLearner
+       output " the highest mark was:" + highestMark + " this was scored by:" + highestMarkLearner
 
-
+return 
 
 
         
