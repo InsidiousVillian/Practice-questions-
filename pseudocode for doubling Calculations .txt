@@ -1,0 +1,46 @@
+question 
+
+a) Write a program that doubles a number by two
+b) Modularise the program in a). Your mainline logic should call two modules
+c) Modify the program in c) above such that the mainline logic calls a method that returns a
+value in the instruction that performs the doubling calculation
+
+start 
+    Declarations 
+	num numberOne 
+	
+	
+	output "Enter a number" 
+	numberOne = ConverToInt32(ReadLine) 
+	
+	//call method 
+	DoublingCalculations(numberOne) 
+	
+	//call method 
+	DisplayResults(total) 
+	
+stop 
+
+num DoublingCalculations(numberOne) 
+    Declarations
+	num total 
+	
+	    total = NumberOne * 2
+		
+return total 
+
+void DisplayResults(numberOne, total)
+
+    output "by doubling " + numberOne + "you will get" + total
+	
+return 
+
+
+	
+	
+		
+
+	
+
+	
+	
