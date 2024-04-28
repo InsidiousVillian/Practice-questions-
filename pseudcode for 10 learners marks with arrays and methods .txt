@@ -31,14 +31,19 @@ start
 	
 		    output "what is the learners mark, the mark must be between 0 to 100"
 		    userMarks = Connvert.ToInt32(ReadLine) 
-			
-		
+
+                    if (userMarks != testMarks.Length)
+
+                       output " that is not the learners mark, please try again "
+
+                    else 
+
+                       output "that is a valid mark" 
+
 		else 
 		
 		    output "that learner is not in the database, you have a total of:" + count  
-			
-		 
-		
+	
 		endif 
 		
 		if (userMarks < 100) 
