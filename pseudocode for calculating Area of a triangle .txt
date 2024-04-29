@@ -1,0 +1,43 @@
+question 
+
+Write the pseudocode for an application that will make use of a module to calculate
+and display the area of a triangle. The user of the application should be prompted for
+the dimensions of the triangle. The dimensions will be input in the main module and
+passed to the module where the calculation will be done and the area of the triangle
+displayed. Formula: Area = ½ (height x base) 
+
+//global declarations 
+double area
+
+
+start 
+    
+	Declarations 
+	double height 
+	double base 
+	
+    output "what is the height of the triangle" 
+	height = Convert.ToInt32(ReadLine) 
+	
+	output "what is the base of the triangle" 
+	base = Convert.ToInt32(ReadLine)
+	
+	// call method 
+	CalculateArea(height, base) 
+	
+stop 
+
+void CalculateArea(double height, double base) 
+
+
+	double area = 0.5 (height * base) 
+	
+	output "the area of the triangle is:" + area 
+	
+return 
+	
+
+	
+	
+	
+	
