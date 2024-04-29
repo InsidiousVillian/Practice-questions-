@@ -1,0 +1,52 @@
+Question 3 :Modify the Question 2 of the average calculator 
+			Use a boolean expression that congradulates the user for getting 50% of higher for their scores.
+			Use a selection structure(Has boolean expressions)
+			
+start
+	//Declarations of variables
+		num studentScores
+		num studentMark
+		num SIZE = 3
+		num studentPercentage
+		num DIVISOR = 3
+		num total = 0
+		num average = 0
+		num FINALTOTAL = 100
+		num PERCENTAGE = 100
+		
+	//Open the program
+    output "Welcome to the student Percentage calcultor"
+ 
+	//Prompt the user to enter values
+	for index = 0 to (SIZE - 1) step 1
+		
+		output "Please enter the student's score:"
+		input studentScores, index + 1
+		
+		//Calculate the total of all scores
+		total = studentScores + total
+		
+	endfor
+	
+	//Calculate the average and display
+	set average = total / DIVISOR
+	output "The average of the scores is:" , average
+	
+	//Prompt for students average
+	output "Please enter the score you wish to see the percentage on"
+	input studentMark
+	
+	//Calculate the students percentage in the overall class
+	set studentPercentage = (studentMark * FINALTOTAL) / PERCENTAGE
+	
+	//Set a bool so that it tests a condition
+	set bool passAverage = true
+
+	//Test if the student opass the class average
+	if (studentPercentage >= 50) == passAverage then
+		output "Congradulations, you have an percentage of: " , studentPercentage , "%"
+	else
+		output "Sorry, you did not reach the average of the class: " , studentPercentage , "%" 
+	endif
+
+stop
