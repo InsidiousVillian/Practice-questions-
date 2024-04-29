@@ -1,0 +1,29 @@
+Question 7:Modify the average calculator so a loop calculates a total
+			Use an definite loop to calculate the scores (Predetermined number of times)
+			Use an accumlator
+start
+	//Declarations of variables
+		num studentScores
+		num SIZE = 3
+		num DIVISOR = 3
+		num accumTotal = 0
+		num average = 0
+	
+	//Prompt the user to enter values
+	for index = 0 to (SIZE - 1) step 1
+	
+		output "Please enter the student's score:"
+		input studentScores, index + 1
+			
+		//Calculate the total of all scores
+		total = studentScores + total
+		
+	endfor
+	
+	//calculate the average
+	set average = accumTotal / DIVISOR
+	
+	output "The average of the class is:"
+	output average
+	
+stop
