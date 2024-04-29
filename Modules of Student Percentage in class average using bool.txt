@@ -1,0 +1,62 @@
+Question 5 :Modulize the entire program into smaller tasks
+			Use appropriate module names (verb + noun)
+			
+start
+	//Declarations of variables
+		num DIVISOR = 3
+		num average = 0
+	
+	//Call a moduk=le to prompt the user to enter values
+	getScores()
+	
+	//Calculate the average
+	average = total / DIVISOR
+	
+	//Prompt for students score
+	output "Please enter the score you wish to see the percentage on"
+	input studentMark
+	
+	//Calculate the students percentage in the overall class
+	getStudentsAverage()
+	
+	//Test if the student opass the class average
+	displayResults()
+	
+stop
+
+getScores()
+	//Declaration of variables
+			num total = 0
+			num studentScores
+			num SIZE = 3
+			
+	for index = 0 to (SIZE - 1) step 1
+	
+		output "Please enter the student's score:"
+		input studentScores, index + 1
+		
+		//Calculate the total of all scores
+		total = studentScores + total
+		
+	endfor
+return
+
+getStudentsPercentage()
+	//Declaration
+		num PERCENTAGE = 100
+		num FINALRESULT = 100
+		
+	studentPercentage = (studentMark / PERCENTAGE) * FINALRESULT
+return
+
+displayResults()
+	//Set a bool so that it tests a condition
+	set bool passAverage = true
+	
+	if (studentPercentage >= 50) == passAverage then
+		output "Congradulations, you have an average of: ", averageRate
+	else
+		output "Sorry you did not reach the average in the class:" , studentPercentage
+	endif
+return
+
