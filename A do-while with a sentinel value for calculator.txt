@@ -1,0 +1,48 @@
+Question 8:Modify question 7 of the average calculator
+			Use an indefinite loop and a sentinel value
+			Use priming input
+start
+	//Declarations of variables
+		num studentScores
+		num SIZE = 3
+		num DIVISOR = 3
+		num total = 0
+		num average = 0
+		string choice
+		string QUIT = "XXX"  
+	
+	//Prompt user to choose to enter the program or not 
+	ouput "Do you wish to input a set of Scores, if no type XXX: "
+	input choice
+		
+	//Prompt the user to enter values
+	do
+		for index = 0 to (SIZE - 1) step 1
+	
+			output "Please enter the student's score:"
+			input studentScores, index + 1
+			
+			//Calculate the total of all scores
+			total = studentScores + total
+			
+		endfor
+		
+		//Calculate the average
+		set average = total / DIVISOR
+	
+		//Display the average of the class
+		output "The average of the class is:"
+		output average
+		
+		//Set a Priming input to iterate the loop
+		output "Do you wish enter another set of Scores, type XXX to quit: "
+		input choice
+		
+	while (choice <> QUIT) then	
+	
+	//Display an Quit message
+	if (choice == QUIT) then
+		output "Thank you for your answer, Goodbye."
+	endif
+	
+stop
