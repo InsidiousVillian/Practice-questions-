@@ -1,0 +1,45 @@
+question 
+
+make a cookie recipe with these ingredients:
+250g butter, softened
+140g caster sugar
+1 egg yolk
+2 tsp vanilla extract
+300g plain flour
+steps to take: 
+Method
+STEP 1
+Mix the butter and sugar in a large bowl with a wooden spoon, then add the egg yolk and vanilla extract and briefly beat to combine.
+
+STEP 2
+Sift over the flour and stir until the mixture is well combined 
+ you might need to get your hands in at the end to give everything a really good mix and press the dough together. Chill for 20-30 mins.
+
+STEP 3
+For basic vanilla biscuits: Pre-heat the oven to 180C/160C fan/gas 4. Chill the dough for 20 - 30minutes,
+ roll out and cut out shapes as above. Bake on a non-stick baking tray for 10-12 minutes until pale golden. 
+ Carefully transfer to a wire rack to cool and crisp up.
+ 
+start 
+
+    Declarations 
+	string [] ingredients = 250g butter, 140g caster sugar, egg yolk, 300g plain flour
+	
+	
+	    output " Welcome to your simple Cookie recipe, press enter to continue"
+	
+	    output " The ingredients you will need to make this simple cookie recipe include:" + ingredients.Length + "press enter to continue" 
+	
+	    output " This will be a step by step guide to making your tasty cookies, press enter everytime you are done with a step"
+		
+		output " step 1 : Mix the butter and sugar in a large bowl with a wooden spoon, then add the egg yolk and vanilla extract and briefly beat to combine."
+		
+		output " step 2 : Sift over the flour and stir until the mixture is well combined you might need to get your hands in at the end to give everything a really good mix and press the dough together. Chill for 20-30 mins."
+		
+		output "  step 3 : For basic vanilla biscuits: Pre-heat the oven to 180C/160C fan/gas 4. Chill the dough for 20 - 30minutes, roll out and cut out shapes as above. Bake on a non-stick baking tray for 10-12 minutes until pale golden. Carefully transfer to a wire rack to cool and crisp up."
+		
+stop 
+
+
+	
+	
