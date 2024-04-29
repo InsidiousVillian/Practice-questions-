@@ -1,0 +1,7 @@
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\bin\Debug\Average calculator using bool.exe.config
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\bin\Debug\Average calculator using bool.exe
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\bin\Debug\Average calculator using bool.pdb
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\obj\Debug\Average calculator using bool.csproj.AssemblyReference.cache
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\obj\Debug\Average calculator using bool.csproj.CoreCompileInputs.cache
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\obj\Debug\Average calculator using bool.exe
+C:\Users\belin\OneDrive\Documents\Average calculator using bool\Average calculator using bool\obj\Debug\Average calculator using bool.pdb
