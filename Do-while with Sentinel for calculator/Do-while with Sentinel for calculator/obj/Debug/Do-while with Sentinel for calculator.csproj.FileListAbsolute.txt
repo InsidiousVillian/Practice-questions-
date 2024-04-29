@@ -1,0 +1,7 @@
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\bin\Debug\Do-while with Sentinel for calculator.exe.config
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\bin\Debug\Do-while with Sentinel for calculator.exe
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\bin\Debug\Do-while with Sentinel for calculator.pdb
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\obj\Debug\Do-while with Sentinel for calculator.csproj.AssemblyReference.cache
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\obj\Debug\Do-while with Sentinel for calculator.csproj.CoreCompileInputs.cache
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\obj\Debug\Do-while with Sentinel for calculator.exe
+C:\Users\belin\OneDrive\Documents\Do-while with Sentinel for calculator\Do-while with Sentinel for calculator\obj\Debug\Do-while with Sentinel for calculator.pdb
