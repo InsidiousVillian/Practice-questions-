@@ -1,0 +1,38 @@
+Question 6:Write a program that doubles a number by 2
+			Modularise into 2 modules
+			Modify the modules into a method that returns the value of a doubling calculation
+			
+start
+	//Declaration of variable
+		num doubledValue
+	
+	//Call a module to get user input
+	getUserValue()
+	
+	//Set a method to the doubled value
+	set doubledValue = getDoubledValue(userNumber)
+	
+	//Display the doubled value
+	output "The value doubled is: ", doubledValue
+	
+stop
+
+num getDoubledValue(num userNumber)
+	//Declarations
+		num result = 0
+		num MULTIPLIOR = 2
+	
+	//Calculate the value by doubling it	
+	result = userNumber * MULTIPLIOR
+	
+return result
+
+getUserValue()
+	//Declaration
+		num userNumber
+	
+	//Prompt the user to enter a value	
+	output "Please enter the value you want to double:"
+	input userNumber
+	
+return
