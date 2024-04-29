@@ -1,0 +1,66 @@
+question 
+
+create a program that searches the contents of a one-dimensional array and display if the
+value is found or not. If the value is found in the array then display the position in the
+array where it was found. 
+
+start 
+   
+     // Define the array
+    num [] data = new num [] { 2, 7, 4, 9, 1 };
+
+    // Prompt the user for input
+    output "Enter a number to search for " 
+    string userInput = ReadLine()
+
+    // Convert the user input to an integer
+ 
+    num search;
+    
+	if (!int.TryParse(userInput, out search))
+ 
+    output "Invalid input. Please enter a number."
+	
+	endif
+	
+return
+ 
+
+    // Initialize a variable to store the index
+	
+    num index = -1;
+ 
+    // Iterate over the array
+    
+	for (int i = 0; i < data.Length; i++)
+ 
+        // Check if the current element matches the search value
+        if (data[i] == search)
+     
+         // If found, store the index and break the loop
+         index = i 
+         break
+		endif
+	endfor
+
+    //Check if the value was found
+    
+	    if (index != -1)
+ 
+        output "Searched value found in array at position: {index}"
+ 
+        else
+ 
+        output "Searched value not found in array"
+		
+		endif
+		
+	endfor
+
+stop 
+			
+		
+			
+		
+		
+	
