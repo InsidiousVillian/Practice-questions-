@@ -1,0 +1,89 @@
+Question 2: modify the average calculator into indefinite loops
+			one with setinel values
+			one with priming input
+part 1C
+start
+	//Declarations of variables
+	num STUDENT_SCORES[] = new num[3]
+	num index = 0
+	num SIZE = 3
+	num total = 0
+	num DIVISOR = 3
+	num average = 0
+	num QUIT = "XXX"
+	string userChoice
+	
+	//Prompt the user to enter values
+	if (userChoice <> QUIT ) then
+		do
+			for index = 0 to (SIZE - 1) step 1
+		
+				output "Please enter the student's score:"
+				input STUDENT_SCORES[index], index++
+		
+				//Calculate the total of all scores
+				total = STUDENT_SCORES[index] + total
+			endfor
+		
+			//Calculate the average
+			set average = total / DIVISOR
+	
+			output "The average of the class is:"
+			output average	
+		
+			//Reprompt user to choose to continue
+			output "Do you wish to continue entering another set of score, type XXX if no:"
+			input userChoice
+	
+		while (index < SIZE) then
+	
+	else
+		output "Thank you for your answer, Goodbye."
+	endif
+	
+stop
+
+part 1D
+start
+	//Declarations of variables
+	num STUDENT_SCORES[] = new num[3]
+	num index = 0
+	num SIZE = 3
+	num total = 0
+	num DIVISOR = 3
+	num average = 0
+	string userChoice
+	
+	//Prompt user to start the program or not 
+	output "Do you wish to start the program, type YES or NO if: "
+	input userChoice
+	
+	//Prompt the user to enter values
+	while (userChoice == "YES") then
+		for index = 0 to (SIZE - 1) step 1
+		
+			output "Please enter the student's score:"
+			input STUDENT_SCORES[index], index++
+		
+			//Calculate the total of all scores
+			total = STUDENT_SCORES[index] + total
+			
+		endfor
+		
+		//calculate the average
+		set average = total / DIVISOR
+	
+		output "The average of the class is:"
+		output average	
+		
+		//Reprompt user to choose to continue
+		output "Do you wish to continue entering another set of score, type YES or NO:"
+		input userChoice
+		
+	endwhile
+	
+	if (userChoice == "NO") then
+		output "Thank you for your answer, Goodbye."
+	endif
+	
+stop
