@@ -1,0 +1,58 @@
+Question 2: use the average calculator and use definite loops
+			one with a while loops
+			one with a for loop
+part 1A
+start
+	//Declarations of variables
+	num STUDENT_SCORES[] = new num[3]
+	num index = 0
+	num SIZE = 3
+	num total = 0
+	num DIVISOR = 3
+	num average = 0
+	
+	//Prompt the user to enter values
+	while (index < SIZE) then
+	
+		output "Please enter the student's score:"
+		input STUDENT_SCORES[index]
+		
+		 //Calculate the total of all scores
+		total = STUDENT_SCORES[index] + total
+		index = index + 1
+		
+	endwhile
+	
+	//Calculate the average
+	set average = total / DIVISOR
+	
+	output "The average of the class is:"
+	output average	
+stop
+
+part 1B
+start
+	//Declarations of variables
+	num STUDENT_SCORES[] = new num[3]
+	num SIZE = 3
+	num total = 0
+	num DIVISOR = 3
+	num average = 0
+	
+	//Prompt the user to enter values
+	for index = 0 to (SIZE - 1) then
+	
+		output "Please enter the student's score:"
+		input STUDENT_SCORES[index], index + 1
+		
+		 //Calculate the total of all scores
+		total = STUDENT_SCORES[index] + total
+		
+	endfor
+	
+	//Calculate the average
+	set average = total / DIVISOR
+	
+	output "The average of the class is:"
+	output average	
+stop
