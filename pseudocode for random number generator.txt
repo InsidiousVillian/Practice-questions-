@@ -10,33 +10,35 @@ start
     // Generate a random number within the range 1 to 5
     randomNumber = number.Next(1,  6)
 
+    // prompts user to enter number, and stores iTS VALUE AS input
     output "guess a number between 1 to 5"
-    input = Convert.ToInt32(Console.ReadLine())
+    input = Convert.ToInt32(ReadLine())
 
-    // Use the loop generated random number
+    //loop used to prompt question 4 times and exits once count is met
     for (count = 0;  count < 4 ; count ++)
 
 
         if ( input == randomNumber )
  
             output "Correct!"
-            Console.ReadLine();
+            ReadLine()
 
             output "guess a number between 1 to 5 "
-            input = Convert.ToInt32(Console.ReadLine())
+            input = Convert.ToInt32(ReadLine())
 			
-		else
+	else
 
             output "Incorrect, better luck next time."
-            Console.ReadLine();
+            ReadLine()
 			
             output "guess a number between 1 to 5 "
-            input = Convert.ToInt32(Console.ReadLine)
+            input = Convert.ToInt32(ReadLine)
 		endif
 	endfor
 
   
     output "Goodbye"
+    ReadLine()
 	
 stop 
 	
