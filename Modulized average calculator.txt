@@ -1,0 +1,90 @@
+Question 2: modulize the solutions of either of the 2 definite loops and the indefinite loops
+
+part 1E
+start
+	//Open the program
+	output "Welcome to the Program"
+	
+	//Prompt the user to enter values
+	getUserInput()
+	
+	output "The average of the class is:"
+	output average	
+stop
+
+getUserInput()
+	//Declarations of variables
+		num STUDENT_SCORES[] = new num[3]
+		num index = 0
+		num SIZE = 3
+		num total = 0
+		num DIVISOR = 3
+		num average = 0
+		
+	while (index < SIZE) then
+	
+		output "Please enter the student's score:"
+		input STUDENT_SCORES[index]
+		
+		 //Calculate the total of all scores
+		total = STUDENT_SCORES[index] + total
+		index = index + 1
+		
+	endwhile
+	
+	//Calculate the average
+	set average = total / DIVISOR
+	
+return
+
+part 1F
+start
+	//Declarations of variables
+		string userFirstChoice
+	
+	//Prompt user to start the program or not 
+	output "Welcome to the Program"
+	output "Do you wish to start the program, type YES or NO if: "
+	input userFirstChoice
+	
+	//Prompt the user to enter values
+	calculateUserInput()
+	
+stop
+
+calculateUserInput()
+	//Declarations of variables
+		num STUDENT_SCORES[] = new num[3]
+		num SIZE = 3
+		num total = 0
+		num DIVISOR = 3
+		num average = 0
+		string userChoice
+		
+	while (userChoice == "YES") then
+		for index = 0 to (SIZE - 1) step 1
+		
+			output "Please enter the student's score:"
+			input STUDENT_SCORES[index], index++
+		
+			//Calculate the total of all scores
+			total = STUDENT_SCORES[index] + total
+		endfor
+		
+		//calculate the average
+		set average = total / DIVISOR
+	
+		output "The average of the class is:"
+		output average	
+		
+		//Reprompt user to choose to continue
+		output "Do you wish to continue entering another set of score, type YES or NO:"
+		input userChoice
+		
+	endwhile
+	
+	//Display a exit message
+	if (userChoice == "NO") then
+		output "Thank you for your answer, Goodbye."
+	endif
+return
