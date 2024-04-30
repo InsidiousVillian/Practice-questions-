@@ -1,0 +1,30 @@
+Question 4: Demonstrate a paralell array 
+			determine a common factor(Data is in strings)
+start
+	//Declarations of variables
+	num ROWS_SIZE = 6
+	num COLS_SIZE = 2
+	num ACTORS_PAYMENTS [6, 2] = { { "2024 salary USD('000 000) ","Actor's Surname" },
+                                { "100                       ","Tom Cruise"},
+                                { "80                        ","Will Smith"},
+                                { "75                        ","Leonardo DiCaprio"},
+                                { "50                        ","Dwayne 'The Rock' Johnson"},
+                                { "45                        ","Ryan Reynolds"}
+                              }
+								
+	//Display the heading
+	output "Data showing the Top five highest-paid actors in 2024"
+	
+	//Display the Data in rows and columns
+	for rows = 0 to (ROWS_SIZE - 1) step 1
+		for cols = 0 to (COLS_SIZE - 1) step 1
+		
+			output ACTORS_PAYMENTS [rows, cols] , " "
+			cols = cols + 1
+			
+		endfor
+		
+		rows = rows + 1
+		
+	endfor
+stop
