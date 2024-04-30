@@ -1,0 +1,50 @@
+actual code for rando gen 
+
+using System;
+
+
+namespace random_number_generator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Declaration 
+            Random number = new Random();
+            int randomNumber;
+            int input;
+            int count; 
+
+            // Generate a random number within the range 1 to 5
+            randomNumber = number.Next(1,  6);
+
+            Console.WriteLine("guess a number between 1 to 5 ");
+            input = Convert.ToInt32(Console.ReadLine());
+
+            //loop used to prompt question 4 times and exits once count is met
+            for (count = 0;  count < 4 ; count ++ )
+
+
+            if ( input == randomNumber )
+            {
+                Console.WriteLine("Correct!");
+                Console.ReadLine();
+
+                    break;
+               
+                }
+            else
+            {
+                Console.WriteLine("Incorrect, better luck next time.");
+                Console.ReadLine();
+
+                Console.WriteLine("guess a number between 1 to 5 ");
+                input = Convert.ToInt32(Console.ReadLine());
+
+                }
+
+            Console.WriteLine("Goodbye");
+			Console.ReadLine();
+        }
+    }
+}
