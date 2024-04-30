@@ -1,0 +1,42 @@
+random number generator 
+
+start 
+     //Declaration 
+        Random number = new Random()
+        num randomNumber
+        num  input
+        num count
+
+    // Generate a random number within the range 1 to 5
+    randomNumber = number.Next(1,  6)
+
+    output "guess a number between 1 to 5"
+    input = Convert.ToInt32(Console.ReadLine())
+
+    // Use the loop generated random number
+    for (count = 0;  count < 4 ; count ++)
+
+
+        if ( input == randomNumber )
+ 
+            output "Correct!"
+            Console.ReadLine();
+
+            output "guess a number between 1 to 5 "
+            input = Convert.ToInt32(Console.ReadLine())
+			
+		else
+
+            output "Incorrect, better luck next time."
+            Console.ReadLine();
+			
+            output "guess a number between 1 to 5 "
+            input = Convert.ToInt32(Console.ReadLine)
+		endif
+	endfor
+
+  
+    output "Goodbye"
+	
+stop 
+	
