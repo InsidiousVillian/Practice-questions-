@@ -1,0 +1,68 @@
+Question 3:Create a program and ask user for input
+			store the values in an array
+			search through the array
+			calculate the total of the stored values
+start
+	//Declarations of variables
+	num count = 0
+	num USER_VALUES[] = new int[3]
+	num SIZE = 3
+	string userChoice
+	string answer
+	num storedValues = 0
+	num total = 0
+	num valueSearch
+	
+	//Open the program
+	output "Welcome to the number search program"
+	
+	//Prompt the user for values
+	while (count < 3)
+		
+		output "Please enter your value: "
+		input USER_VALUES[count]
+		count + 1
+		
+	endwhile 
+	
+	//Prompt the user to choose if they want to search
+	output "Do you wish to search for a value: "
+	input userChoice
+	
+	//Set the search or close the program
+	if (userChoice <> "NO")
+		for index = 0 to (SIZE - 1) step 1
+			
+			//Set the default variable to the array
+			valueSearch = USER_VALUES[index]
+			output "Is this the number you are looking for? " 
+			output USER_VALUES[index] , index + 1
+			
+			//Prompt the user to enter a answer
+			output "Type STOP or NO:"
+			input answer 
+			
+			//Calculate or iterate another element
+			if (answer <> "STOP")
+				
+				index + 1
+				
+			else
+				for counter = 0 to (SIZE - 1) step 1
+					
+					//Calculate the total of the array
+					storedValues = USER_VALUES[counter] + storedValues
+					counter + 1
+					
+				endfor
+				
+				//Calculate the actual total without the searched value
+				total =	storedValues - valueSearch
+				
+				output "The total of the remaining values stored are: " , total
+				return	
+			endif
+		endfor
+	endif
+	
+stop		
