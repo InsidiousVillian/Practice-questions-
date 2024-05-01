@@ -1,0 +1,44 @@
+start 
+
+	declarations
+	num [] values = new values { 1, 24, 32, 68}
+	num userValue 
+	num count
+	string choice 
+    string exit = "Yes"
+
+	set count = 0 
+
+	while (count < 5)
+
+	output " what is the value you are looking  for" 
+	userValue = Convert.ToInt32(ReadLine())
+
+	
+		if ( uservalue == values[i] )
+
+			output "value" + userValue + " was found, if you want to exit the program enter "YES" 
+			choice = Readline
+		
+		else 
+			
+			output " value was not found, please try again " 
+
+		endif 
+
+
+		output "if you want to exit the program enter " Yes " 
+		choice = Readline()
+
+		if (choice == exit)
+
+			output " sorry to see you go, have a nice day " 
+			break 
+
+		endif
+		
+stop 
+
+ 
+		
+
