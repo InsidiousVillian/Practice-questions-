@@ -30,6 +30,7 @@ start
 		output "if you want to exit the program enter " Yes " 
 		choice = Readline()
 
+count ++ 
 		if (choice == exit)
 
 			output " sorry to see you go, have a nice day " 
