@@ -5,7 +5,7 @@ start
 	num userValue 
 	num count
 	string choice 
-    string exit = "Yes"
+        string exit = "Yes"
 
 	set count = 0 
 
