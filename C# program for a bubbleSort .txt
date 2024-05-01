@@ -26,8 +26,10 @@ namespace BubbleSort
             {
                 for (int j = 0; j < array.Length - i - 1; j++)
                 {
+//checks if value is out of order by size. 
                     if (array[j] > array[j + 1])
                     {
+//if it is it takes the big number out of place and puts it inside a temp, it then put the smaller value inside the big numbers space and then puts the value stored inside the temp into the smaller numbers space.
                         int temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
