@@ -1,0 +1,31 @@
+start 
+
+	Declaration 
+	num [] scores = new scores [5] 
+	num [] gamesPlayed = new gamesPlayed [5] 
+	num count 
+
+	set count = 0 
+
+	//while loop to perform action 5 times 
+
+	while (count < 5 ) 
+
+		output " enter the number of games played " 
+	gamesPlayed = Convert.ToInt32(Readline())
+
+	output " enter the scores of the games "
+	scores = Convert.ToInt32(Readline())
+
+	count ++ 
+
+	endwhile 
+
+	// after action performs 5 times display all the games played and their test scores. 
+
+	output " gamesplayed[i]" + "scores[i]"
+stop 
+
+	
+	
+	
