@@ -1,0 +1,48 @@
+card machine 
+
+start 
+
+    Declarations 
+	num userInput
+	num bankBalance = 1000
+	num count 
+	
+ 
+	output " what is the price the customer payed?"
+	userInput = Convert.ToInt32(ReadLine)
+	
+	    CalculateBalance(userInput, bankBalance) 
+	
+	    if (userInput > 200) 
+		
+		    output " you get a free 2L coke" 
+			
+		else 
+		
+		    output " Approved, offer a reciept " 
+			
+		endif 
+ 	
+	
+stop 
+
+void CalculateBalance(userInput, bankBalance) 
+		
+	    Declaration 
+        num newBankBalance	
+
+            newBankBalance = userInput - bankBalance
+
+                if (newBankBalance <= 0)	
+
+                    output " Declined " 
+
+                else 
+					
+                    output "Approved"
+		
+        return
+		
+		   
+	
+	
