@@ -1,0 +1,53 @@
+
+Search an array 
+
+start 
+
+    //Declarations 
+        string[] names = { "Jet", "Mary", "Avalon", "Boysie" }
+        string[] passwords = { "poopoo", "lolo", "lego", "lori" }
+        string username
+        string userPassword
+		
+		
+        bool isValidUsername = false
+        bool isValidPassword = false
+
+        output " enter your username "
+        username = Console.ReadLine()
+
+        Console.WriteLine"enter your password"
+        userPassword = Console.ReadLine()
+
+        for (int i = 0; i < names.Length; i++)
+      
+            if (names[i] == username)
+         
+                isValidUsername = true
+                break
+    
+            for (int i = 0; i < passwords.Length; i++)
+            
+                if (passwords[i] == userPassword)
+                
+                    isValidPassword = true
+                    break
+  
+            if (isValidUsername && isValidPassword)
+        
+
+                output "you are logged in" +", " + username 
+
+            else
+       
+                output "Incorrect password or username"
+            
+            ReadKey()
+stop 
+
+      
+
+  
+
+
+	
