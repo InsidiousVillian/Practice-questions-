@@ -1,0 +1,28 @@
+pseudocode for buying a shirt 
+
+start 
+    Declaration 
+	string chosenShirt 
+	num price 
+	num bankBalance = 1000
+	
+	output "what shirt are you buying?" 
+	chosenShirt = Console.ReadLine()
+	
+	output " what is the price of the shirt" 
+	price = Convert.ToInt32(ReadLine())
+	
+	CalculateBankBalance(price, bankBalance) 
+
+
+    output "you bought a :" + chosenShirt + "which costed" + price + "your final bank balance is :" + finalBankBalance 
+	
+stop 
+
+CalculateBankBalance(price, bankBalance) 
+
+    num finalBankBalance
+	
+	    finalBankBalance = bankBalance - price
+	
+	return finalBankBalance
