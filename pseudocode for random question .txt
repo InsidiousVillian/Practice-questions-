@@ -1,0 +1,44 @@
+start 
+
+    num SIZE = 3
+	num [] value = new value[3] 
+	num count 
+	
+	
+		
+		set count = 0 
+		
+		while (count < SIZE) 
+		
+		    output "enter a value"
+			value[i] = Convert.ToInt32(ReadLine) 
+			
+			count++ 
+			
+        endwhile 
+		
+		CalculateResults(value[i] )
+		
+		if (result = 30) 
+		
+		    output "You are amazing" 
+			
+		else 
+		
+		    output "you suck" 
+			
+stop 
+
+    num CalculateResults(value[i] )
+   
+        Declaration 
+		num result
+		
+		result += value [i] 
+		
+	return result 
+		
+			
+			
+		
+		
