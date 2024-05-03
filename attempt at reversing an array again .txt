@@ -1,0 +1,15 @@
+question 
+
+reverse an array values 
+
+start 
+    Declaration 
+	num [] values = {1, 2, 3, 4, 5} 
+	
+	    array.reverse[values] 
+		
+	    output " the array backwards is:" + values[i] 
+		
+stop 
+
+
