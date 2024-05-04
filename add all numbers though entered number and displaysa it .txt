@@ -1,0 +1,20 @@
+  
+        //declaration 
+        int sum = 0;
+        int userInput; 
+
+        Console.Write("Enter a number: "); // Prompt user for input
+
+        userInput = Convert.ToInt32(Console.ReadLine()); // Reading user input as an integer
+
+        sum = 0; // Initializing a variable to store the sum
+
+        // Loop to calculate the sum of numbers from 1 to 'n'
+        for (int i = 1; i <= userInput; i++)
+        {
+            sum += i; // Adding each number to the sum
+        }
+
+        // Displaying the sum of numbers from 1 to the entered number
+        Console.WriteLine("The sum of numbers from 1 to {0} is: {1}", userInput, sum);
+    
