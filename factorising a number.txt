@@ -1,0 +1,14 @@
+start 
+
+	Declaration 
+	int input 
+
+	output "please provide a number "
+	input = Int32.Parse(Readline())
+
+	for (int i = 1; i<= input ;i++)
+
+		if (input % 1 == 0)
+
+			output " {i} is factor of {input} " 
+stop 
