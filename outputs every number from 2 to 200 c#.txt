@@ -1,0 +1,17 @@
+question 
+output every even number from 2 to 200 c# 
+  
+  internal class Program
+  {
+      static void Main(string[] args)
+      {
+          for (int i = 3; i < 200 ; i++) 
+          { 
+              if (i %3 == 0) 
+              { 
+                  Console.WriteLine(i);
+              }
+          
+          }
+      }
+  }
