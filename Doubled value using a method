@@ -1,0 +1,32 @@
+Question 2: An application that doubles a value and calls one method and return a value to be displayed back to the user
+
+start
+	//Declarations of variables
+	num userNumber
+	num doubledTotal
+	
+	//Open the program
+	output "Welcome to the doubled value program"
+	
+	//Prompt the user to enter a value
+	output " Please enter a value that you want to double:"
+	input userNumber
+	
+	//Call a method to return a total
+	doubledTotal = getDoubledTotal (userNumber)
+	
+	//Display the total
+	output "The value doubled is:"
+	output doubledTotal
+	
+stop
+
+num getDoubledTotal(num userNumber)
+	//Declarations
+	num total 
+	num MULTIPLIOR = 2
+	
+	//Calculate the value's total
+	total = userNumber * MULTIPLIOR
+	
+return total
