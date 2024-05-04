@@ -1,0 +1,38 @@
+
+    static void Main(string[] args)
+    {
+        //Declarations 
+        string repairShopID;
+        string vehiclePolicyNumber;
+        string claimDate;
+        double claimAmount;
+
+        //   starting value      ; condition       ; incrementation 
+        for (int claimCounter = 0; claimCounter < 2; claimCounter++)
+        {
+            Console.WriteLine("what is your repair shop ID ?/n");
+            repairShopID = Console.ReadLine();
+
+            Console.WriteLine("what is the vehicle policy numberr?/n ");
+            vehiclePolicyNumber = Console.ReadLine();
+
+            Console.WriteLine("what is the amount being claimed"+ "for the repairs?/n");
+            claimAmount = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("what was the date of the repairs?" );
+            claimDate = Console.ReadLine();
+
+            Console.WriteLine("the details entered for repairs" + (claimCounter + 1) + "are") ;
+
+            Console.WriteLine("repair shop id:" + repairShopID);
+
+            Console.WriteLine("Policy number:" + vehiclePolicyNumber);
+
+            Console.WriteLine("claims amount:" + claimAmount);
+
+            Console.WriteLine("Claims date:" + claimDate);
+
+        }
+        Console.ReadKey();
+    }
+}
