@@ -1,0 +1,35 @@
+Question 1: Do an application that calculates the perimeter of a rectangle
+
+start
+	//Declarations of variables
+	num rectangleLengths
+	num rectangleWidths
+	
+	//Open the program
+	output "Welcome to the 2D rectangle calculator"
+	
+	//Prompt the user to enter the length and width
+	output "Please enter the length of the Rectangle:"
+	input rectangleLengths
+	
+	output "Please enter the width of the Rectangle:"
+	input rectangleWidths
+	
+	//Call a method to calculate and display
+	getRectanglePerimeter(rectangleLengths, rectangleWidths)
+	
+stop
+
+//Method that calculate and displays the Perimeter
+void getRectanglePerimeter(num rectangleLengths, num rectangleWidths)
+	//Declartions
+	num perimeterTotal
+	num MULTIPLIOR = 2
+	
+	//Calculate the Perimeter
+	perimeterTotal =(rectangleLengths + rectangleWidths)* MULTIPLIOR
+	
+	//Display the Total 
+	output "The perimeter total for the rectangle is:"
+	output perimeterTotal
+return
