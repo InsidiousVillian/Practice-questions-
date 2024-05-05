@@ -1,0 +1,48 @@
+Question 3a - Create an investment prograam that calculate the amount in a method
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Investment_calculator_using_methods
+{
+    internal class Program
+    {
+        static int INVESTED_MONEY = 5000;
+        static int INTEREST_PERCENTAGE = 2;
+        static int PERCENTAGE = 100;
+        static int YEARS_TOTAL = 1;      
+        static int amount;
+
+        static void Main(string[] args)
+        {
+            //Declarations of variables
+            int totalAmount;
+
+            //Open the program
+            Console.WriteLine("Welcome to the Investment Program:");
+
+            //Call a method to calculate the investment total
+            totalAmount = CalculateInvestmentTotal();
+
+            //Display the amount of the investment
+            Console.WriteLine("\nThe investment for one year is:" +  totalAmount);
+        }
+        static int CalculateInvestmentTotal()
+        {
+            //Declarations 
+            int INVESTED = 5000;
+            int INTEREST = 2;
+            int PERCENTAGE = 100;
+            int YEARS = 1;
+            int amount; 
+
+            //Calculate the amount
+            amount = INVESTED * YEARS * INTEREST/ PERCENTAGE;
+
+            return amount;
+        }
+    }
+}
