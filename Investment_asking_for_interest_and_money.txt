@@ -1,0 +1,58 @@
+Question 3c - investment calculator that needs to prompt the user the investment and the interest.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Investment_asking_for_interest_and_money
+{
+
+    internal class Program
+    {
+        static int userAmount;
+        static int userInterest;
+        static int PERCENTAGE = 100;
+        static int YEARS_TOTAL = 1;
+        static int amount;
+
+        static void Main(string[] args)
+        {
+            //Declarations of variables
+            int userInterest;
+            int userAmount;
+            int totalAmount;
+
+            //Open the program
+            Console.WriteLine("Welcome to the Investment Program:");
+
+            //Prompt user to enter the amount
+            Console.WriteLine("\nPlease enter the amount you are investing:");
+            userAmount = Convert.ToInt32(Console.ReadLine());
+
+            //Prompt user to enter interest
+            Console.WriteLine("\nPlease enter the interest:");
+            userInterest = Convert.ToInt32(Console.ReadLine());
+
+            //Call a method to calculate the investment total
+            totalAmount = CalculateInvestmentTotal(userAmount,userInterest);
+
+            //Display the amount of the investment
+            Console.WriteLine("\nThe investment for one year is:" + totalAmount);
+        }
+        static int CalculateInvestmentTotal(int userAmount, int userInterest)
+        {
+            //Declarations
+            int PERCENTAGE = 100;
+            int YEARS = 1;
+            int amount;
+
+            //Calculate the amount
+            amount = userAmount * YEARS * userInterest / PERCENTAGE;
+
+            return amount;
+        }
+    }
+}
+
