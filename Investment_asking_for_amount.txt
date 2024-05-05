@@ -1,0 +1,53 @@
+Question 3b - Prompt the user to ask for the investment and calculate includingh displaying it
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Investment_asking_for_amount
+{
+    internal class Program
+    {
+        static int userAmount;
+        static int INTEREST_PERCENTAGE = 2;
+        static int PERCENTAGE = 100;
+        static int YEARS_TOTAL = 1;
+        static int amount;
+
+        static void Main(string[] args)
+        {
+            //Declarations of variables
+            int userAmount;
+            int totalAmount;
+
+            //Open the program
+            Console.WriteLine("Welcome to the Investment Program:");
+
+            //Prompt user to enter the amount
+            Console.WriteLine("\nPlease enter the amount you are investing:");
+            userAmount = Convert.ToInt32(Console.ReadLine());
+
+            //Call a method to calculate the investment total
+            totalAmount = CalculateInvestmentTotal(userAmount);
+
+            //Display the amount of the investment
+            Console.WriteLine("\nThe investment for one year is:" + totalAmount);
+        }
+        static int CalculateInvestmentTotal(int userAmount)
+        {
+            //Declarations 
+            int INTEREST = 2;
+            int PERCENTAGE = 100;
+            int YEARS = 1;
+            int amount;
+
+            //Calculate the amount
+            amount = userAmount * YEARS * INTEREST / PERCENTAGE;
+
+            return amount;
+        }
+    }
+}
+
