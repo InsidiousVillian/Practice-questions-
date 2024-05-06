@@ -1,0 +1,90 @@
+A program that accepts insurance policy data, including a policy number, customers last name, customers first name, age, premium due date(month, day, year) 
+and number of driving accidents in the last 3 years.
+if
+
+start
+    Declarations 
+	num policyNumber 
+	num userPolicyNumber
+	string lastName 
+	string firstName 
+	num age
+	string month 
+	string userMonth
+	num day
+    num userDay	
+	num year
+    num userYear	
+	num accidents
+	
+	output " what is the insurance policy number?" 
+	input userPolicyNumber
+	
+	output " what is your last name ?"
+	input lastName
+	
+	output " what is your firstName"
+	input firstName 
+	
+	output " what is your age?"
+	input age 
+	
+	output "what is the day" 
+	input day
+	
+	output "what is the month"
+	input month
+	
+	output "what is the year" 
+	input year
+	
+	output " how many accidents in the last 3 years?" 
+	input accidents
+	
+	if (policyNumber < 1000 || policyNumber > 9999) 
+	
+	    policyNumber = 0 
+		
+	else 
+	
+	    policyNumber = userpolicyNumber
+		
+	endif 
+	
+	if (month >= 13 && day >= 32)
+	
+	    month = 0 
+		day = 0 
+		year = 0 
+		
+	else 
+	
+	    month = userMonth
+		day = userDay
+		year = userYear
+		
+	endif 
+	
+	output " your policyNumber is:" , policyNumber , "click enter to see more" 
+	
+	output "your name is:" , lastName , firstName , "click enter to continue " 
+	
+	output " your age is :" , age , "click enter to continue" 
+	
+	output " due date is:" month , day, year  
+	
+	output "the number of accidents that occured in the last 3 years is:" , accidents
+
+stop
+	
+	
+	
+	
+	
+	
+	    
+	
+	    
+	
+	    
+	
