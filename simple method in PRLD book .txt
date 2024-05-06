@@ -1,0 +1,25 @@
+start 
+
+    declaration 
+	num investment = 5000 
+	num intrest = 0.5 
+
+    //method 
+	
+	Calculate(investment, intrest) 
+    
+	output "result:" , result 
+	
+stop 
+
+Calculate(investment, intrest) 
+
+    declaration 
+	num result 
+	
+	result = investment * intrest
+	
+	return result 
+	
+
+
