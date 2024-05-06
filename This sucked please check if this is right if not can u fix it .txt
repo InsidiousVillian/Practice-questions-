@@ -7,33 +7,34 @@ times the loop executed once the loop had finished executing.
 
 start
     Declarations 
-	num count 
+	num count = 0 
 	num value 
-	string input 
-	num total 
+	string choiceInput 
+	num total = 0 
 	
 	while (count < 100) 
 	
 	    output "enter a number" 
-		value = COnvert.ToInt32(ReadLine) 
+		input value 
 		
-		count ++ 
+		count = count + 1
 		
 		output "if u want to exit, type no"
-		input = ReadLine 
+		input choiceInput 
 		
-		if (input = no) 
+		if (input == "no") 
 		
-		    total += value 
+		    total = value + total
 		
 		    output "your total is:" + total
 		
 		else 
 		
 		    output "enter another number:" 
-			value = COnvert.ToInt32(ReadLine) 
+			input value 
 			
 		endif 
+
 	endwhile 
 	
 stop 
