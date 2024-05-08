@@ -1,0 +1,31 @@
+Question: create a program that does the factorial for the the user input
+
+start 
+	//Declarations of variables
+		num usersValue
+		num count = 0
+		num index
+		num factorTotal = 1
+		
+	//Prompt the user to enter the number they wish to see the factorial to
+	output "Please enter the value you wish to calculate the factorial to:"
+	input usersValue
+	
+	set index = usersValue
+	
+	//Create a for loop to iterate the total of the factorial using the user input as a loop control value
+	while (index > 0)
+		
+		//Calculate the factorial for the value
+		set factorTotal = (usersValue - count) * factorTotal
+		set count = count + 1
+		
+		index = index - 1
+		
+	endwhile
+		
+	output "The factorial total for you value is:", factorTotal
+	
+stop
+	
+		
