@@ -1,0 +1,260 @@
+ public partial class Form1 : Form
+ {
+     //initiallised globally
+     const string FIRE_DRAG_NAME = "Fire dragon ";
+     const int FIRE_DRAG_HP = 20;
+     const int FIRE_DRAG_ATK = 5;
+     const int FIRE_DRAG_SPATK = 12;
+     const int FIRE_DRAG_BLOCK = 4;
+
+     const string ICE_DRAG_NAME = "Ice dragon";
+     const int ICE_DRAG_HP = 30;
+     const int ICE_DRAG_ATK = 4;
+     const int ICE_DRAG_SPATK = 9;
+     const int ICE_DRAG_BLOCK = 5;
+
+     const string WIND_DRAG_NAME = "wind dragon";
+     const int WIND_DRAG_HP = 40;
+     const int WIND_DRAG_ATK = 3;
+     const int WIND_DRAG_SPATK = 7;
+     const int WIND_DRAG_BLOCK = 5;
+
+     const string EARTH_DRAG_NAME = "Earth dragon";
+     const int EARTH_DRAG_HP = 50;
+     const int EARTH_DRAG_ATK = 2;
+     const int EARTH_DRAG_SPATK = 5;
+     const int EARTH_DRAG_BLOCK = 6;
+
+     public Form1()
+     {
+         InitializeComponent();
+     }
+
+     private void label21_Click(object sender, EventArgs e)
+     {
+
+     }
+
+     private void Form1_Load(object sender, EventArgs e)
+     {
+
+
+
+     }
+
+     private void label5_Click(object sender, EventArgs e)
+     {
+
+     }
+
+     private void groupBox1_Enter(object sender, EventArgs e)
+     {
+
+     }
+
+     private void groupBox5_Enter(object sender, EventArgs e)
+     {
+
+     }
+
+     private void Form1_Load_1(object sender, EventArgs e)
+     {
+
+
+
+     }
+
+     private void pictureBox5_Click(object sender, EventArgs e)
+     {
+     }
+
+     private void textBox4_TextChanged(object sender, EventArgs e)
+     {
+
+     }
+
+     private void label14_Click(object sender, EventArgs e)
+     {
+
+     }
+
+     private void label6_Click(object sender, EventArgs e)
+     {
+
+     }
+
+     private void label20_Click(object sender, EventArgs e)
+     {
+
+     }
+
+     private void button3_Click(object sender, EventArgs e)
+     {
+         //hiding Starting Screen
+         this.Hide();
+         //call out the Players Screen
+         Form2 f2 = new Form2();
+         //display the Players Screen
+         f2.ShowDialog();
+         //remove form 2
+         f2 = null;
+         //show Starting Screen again
+         this.Show();
+
+
+
+     }
+
+     private void SaveButton1_Click(object sender, EventArgs e)
+     {
+         // declarations 
+         string[] P1data = { FIRE_DRAG_NAME, ICE_DRAG_NAME, WIND_DRAG_NAME, EARTH_DRAG_NAME };
+         int[] P1values = { FIRE_DRAG_HP, FIRE_DRAG_ATK, FIRE_DRAG_SPATK, FIRE_DRAG_BLOCK, ICE_DRAG_HP, ICE_DRAG_ATK,
+                            ICE_DRAG_SPATK, ICE_DRAG_BLOCK, WIND_DRAG_HP, WIND_DRAG_ATK, WIND_DRAG_SPATK, WIND_DRAG_BLOCK ,
+                            EARTH_DRAG_HP , EARTH_DRAG_ATK , EARTH_DRAG_SPATK ,EARTH_DRAG_BLOCK  };
+
+         // loop to check which radio button is checked
+         if (radioButton1.Checked == true)
+         {
+             SaveFireValues(P1values, P1data);
+             //locks the group box after save button is pressed 
+             groupBox3.Enabled = false;
+
+         }
+
+         else if (radioButton2.Checked == true)
+         {
+
+             SaveIceValues(P1values, P1data);
+             groupBox3.Enabled = false;
+         }
+         else if (radioButton3.Checked == true)
+         {
+             SaveWindValues(P1values, P1data);
+             groupBox3.Enabled = false;
+
+         }
+         else if (radioButton4.Checked == true)
+         {
+             SaveEarthValues(P1values, P1data);
+             groupBox3.Enabled = false;
+         }
+
+         // method for each type of draghon based off of raidobutton pressed
+         static void SaveFireValues(int[] P1values, string[] P1data)
+         {
+             P1data[0] = FIRE_DRAG_NAME;
+             P1values[0] = FIRE_DRAG_HP;
+             P1values[1] = FIRE_DRAG_ATK;
+             P1values[2] = FIRE_DRAG_SPATK;
+             P1values[3] = FIRE_DRAG_BLOCK;
+
+         }
+
+         static void SaveIceValues(int[] P1values, string[] P1data)
+         {
+             P1data[0] = ICE_DRAG_NAME;
+             P1values[0] = ICE_DRAG_HP;
+             P1values[1] = ICE_DRAG_ATK;
+             P1values[2] = ICE_DRAG_SPATK;
+             P1values[3] = ICE_DRAG_BLOCK;
+
+         }
+         static void SaveWindValues(int[] P1values, string[] P1data)
+         {
+             P1data[0] = WIND_DRAG_NAME;
+             P1values[0] = WIND_DRAG_HP;
+             P1values[1] = WIND_DRAG_ATK;
+             P1values[2] = WIND_DRAG_SPATK;
+             P1values[3] = WIND_DRAG_BLOCK;
+
+         }
+         static void SaveEarthValues(int[] P1values, string[] P1data)
+         {
+
+             P1data[0] = EARTH_DRAG_NAME;
+             P1values[0] = EARTH_DRAG_HP;
+             P1values[1] = EARTH_DRAG_ATK;
+             P1values[2] = EARTH_DRAG_SPATK;
+             P1values[3] = EARTH_DRAG_BLOCK;
+
+         }
+
+     }
+
+
+     private void button2_Click(object sender, EventArgs e)
+     {
+         string[] P2data = { FIRE_DRAG_NAME, ICE_DRAG_NAME, WIND_DRAG_NAME, EARTH_DRAG_NAME };
+         int[] P2values = { FIRE_DRAG_HP, FIRE_DRAG_ATK, FIRE_DRAG_SPATK, FIRE_DRAG_BLOCK, ICE_DRAG_HP, ICE_DRAG_ATK,
+                            ICE_DRAG_SPATK, ICE_DRAG_BLOCK, WIND_DRAG_HP, WIND_DRAG_ATK, WIND_DRAG_SPATK, WIND_DRAG_BLOCK ,
+                            EARTH_DRAG_HP , EARTH_DRAG_ATK , EARTH_DRAG_SPATK ,EARTH_DRAG_BLOCK  };
+
+         if (radioButton5.Checked == true)
+         {
+             SaveFireValues(P2values, P2data);
+             groupBox4.Enabled = false; 
+         }
+
+         else if (radioButton6.Checked == true)
+         {
+
+             SaveIceValues(P2values, P2data);
+             groupBox4.Enabled = false;
+         }
+         else if (radioButton7.Checked == true)
+         {
+             SaveWindValues(P2values, P2data);
+             groupBox4.Enabled = false;
+
+         }
+         else if (radioButton8.Checked == true)
+         {
+             SaveEarthValues(P2values, P2data);
+             groupBox4.Enabled = false;
+         }
+
+         static void SaveFireValues(int[] P2values, string[] P2data)
+         {
+             P2data[0] = FIRE_DRAG_NAME;
+             P2values[0] = FIRE_DRAG_HP;
+             P2values[1] = FIRE_DRAG_ATK;
+             P2values[2] = FIRE_DRAG_SPATK;
+             P2values[3] = FIRE_DRAG_BLOCK;
+
+
+         }
+
+         static void SaveIceValues(int[] P2values, string[] P2data)
+         {
+             P2data[0] = ICE_DRAG_NAME;
+             P2values[0] = ICE_DRAG_HP;
+             P2values[1] = ICE_DRAG_ATK;
+             P2values[2] = ICE_DRAG_SPATK;
+             P2values[3] = ICE_DRAG_BLOCK;
+
+         }
+         static void SaveWindValues(int[] P2values, string[] P2data)
+         {
+             P2data[0] = WIND_DRAG_NAME;
+             P2values[0] = WIND_DRAG_HP;
+             P2values[1] = WIND_DRAG_ATK;
+             P2values[2] = WIND_DRAG_SPATK;
+             P2values[3] = WIND_DRAG_BLOCK;
+
+         }
+         static void SaveEarthValues(int[] P2values, string[] P2data)
+         {
+
+             P2data[0] = EARTH_DRAG_NAME;
+             P2values[0] = EARTH_DRAG_HP;
+             P2values[1] = EARTH_DRAG_ATK;
+             P2values[2] = EARTH_DRAG_SPATK;
+             P2values[3] = EARTH_DRAG_BLOCK;
+
+
+
+
+         }
+
+     }
