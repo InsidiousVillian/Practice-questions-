@@ -1,0 +1,53 @@
+question Suppose a customer can input the number of orders they made per month for the past year.
+For instance, they may have ordered three times in the first month, once in the second
+month, five times in the third month, and so forth.
+Now, develop pseudocode incorporating a loop prompting the user to input the number of
+orders placed each month over the past year (12 months). Compute and display the total
+number of orders made by the customer during the past year. Subsequently, determine the
+percentage discount they are eligible for based on the quantity of purchases they made.
+
+start 
+    Declaration 
+	num orders [] = new num [12] 
+	num months = {january, febuary, march, April, May, June, July, August, September, October, November, December} 
+	num count
+    num totalOrders	
+	num totalDiscount = {0, 10, 20} 
+	
+	set count = 0 
+	
+	while (count < 12) 
+	
+	    output " In ", months[count] ,"how many orders did you place"
+		input orders[count] 
+		
+		count = count + 1 
+		
+	endwhile 
+	
+	for (count = 0 to count.Length, count ++) 
+	
+	    totalOrders = orders[count] + orders[count + 1]
+	endfor 
+	
+	if (totalOrders > 0 && totalOrders <= 5) 
+	
+	    discountedPrice = totalOrders - (totalDiscount[0] * totalOrders)
+		
+	    output "the total numbers of orders made in the past year is:", discountedPrice
+	
+	else if (totalOrders >= 6 && totalOrders <= 10 ) 
+	
+	    discountedPrice = totalOrders - (totalDiscount[1] * totalOrders)
+		
+	    output "the total numbers of orders made in the past year is:", discountedPrice
+		
+	else 
+	 
+	    discountedPrice = totalOrders - (totalDiscount[2] * totalOrders)
+		
+	    output "the total numbers of orders made in the past year is:", discountedPrice
+		
+stop 
+		
+	
