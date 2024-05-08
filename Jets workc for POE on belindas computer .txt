@@ -1,0 +1,138 @@
+ private void SaveButton1_Click(object sender, EventArgs e)
+ {
+     string[] P1data = { FIRE_DRAG_NAME, ICE_DRAG_NAME, WIND_DRAG_NAME, EARTH_DRAG_NAME };
+     int[] P1values = { FIRE_DRAG_HP, FIRE_DRAG_ATK, FIRE_DRAG_SPATK, FIRE_DRAG_BLOCK, ICE_DRAG_HP, ICE_DRAG_ATK,
+                        ICE_DRAG_SPATK, ICE_DRAG_BLOCK, WIND_DRAG_HP, WIND_DRAG_ATK, WIND_DRAG_SPATK, WIND_DRAG_BLOCK ,
+                        EARTH_DRAG_HP , EARTH_DRAG_ATK , EARTH_DRAG_SPATK ,EARTH_DRAG_BLOCK  };
+
+     if (radioButton1.Checked == true)
+     {
+         SaveFireValues(P1values, P1data);
+
+     }
+
+     else if (radioButton2.Checked == true)
+     {
+
+         SaveIceValues(P1values, P1data);
+     }
+     else if (radioButton3.Checked == true)
+     {
+         SaveWindValues(P1values, P1data);
+
+     }
+     else if (radioButton4.Checked == true)
+     {
+         SaveEarthValues(P1values, P1data);
+     }
+
+    static void SaveFireValues(int[] P1values, string[] P1data) 
+     {
+         P1data[0] = FIRE_DRAG_NAME;
+         P1values[0] = FIRE_DRAG_HP;
+         P1values[1] = FIRE_DRAG_ATK;
+         P1values[2] = FIRE_DRAG_SPATK;
+         P1values[3]= FIRE_DRAG_BLOCK;
+
+
+     }
+
+     static void SaveIceValues(int[] P1values, string[] P1data)
+     {
+         P1data[0] = ICE_DRAG_NAME;
+         P1values[0] = ICE_DRAG_HP;
+         P1values[1] = ICE_DRAG_ATK;
+         P1values[2] = ICE_DRAG_SPATK;
+         P1values[3] = ICE_DRAG_BLOCK;
+
+     }
+     static void SaveWindValues(int[] P1values, string[] P1data) 
+     {
+         P1data[0] = WIND_DRAG_NAME;
+         P1values[0] = WIND_DRAG_HP;
+         P1values[1] = WIND_DRAG_ATK;
+         P1values[2] = WIND_DRAG_SPATK;
+         P1values[3] = WIND_DRAG_BLOCK;
+
+     }
+     static void SaveEarthValues(int[] P1values, string[] P1data) 
+     {
+
+         P1data[0] = EARTH_DRAG_NAME;
+         P1values[0] = EARTH_DRAG_HP;
+         P1values[1] = EARTH_DRAG_ATK;
+         P1values[2] = EARTH_DRAG_SPATK;
+         P1values[3] = EARTH_DRAG_BLOCK;
+
+     }
+
+
+ }
+
+
+ private void button2_Click(object sender, EventArgs e)
+ {
+     string[] P2data = { FIRE_DRAG_NAME, ICE_DRAG_NAME, WIND_DRAG_NAME, EARTH_DRAG_NAME };
+     int[] P2values = { FIRE_DRAG_HP, FIRE_DRAG_ATK, FIRE_DRAG_SPATK, FIRE_DRAG_BLOCK, ICE_DRAG_HP, ICE_DRAG_ATK,
+                        ICE_DRAG_SPATK, ICE_DRAG_BLOCK, WIND_DRAG_HP, WIND_DRAG_ATK, WIND_DRAG_SPATK, WIND_DRAG_BLOCK ,
+                        EARTH_DRAG_HP , EARTH_DRAG_ATK , EARTH_DRAG_SPATK ,EARTH_DRAG_BLOCK  };
+
+     if (radioButton5.Checked == true)
+     {
+         SaveFireValues(P2values, P2data);
+
+     }
+
+     else if (radioButton6.Checked == true)
+     {
+
+         SaveIceValues(P2values, P2data);
+     }
+     else if (radioButton7.Checked == true)
+     {
+         SaveWindValues(P2values, P2data);
+
+     }
+     else if (radioButton8.Checked == true)
+     {
+         SaveEarthValues(P2values, P2data);
+     }
+
+     static void SaveFireValues(int[] P2values, string[] P2data)
+     {
+         P2data[0] = FIRE_DRAG_NAME;
+         P2values[0] = FIRE_DRAG_HP;
+         P2values[1] = FIRE_DRAG_ATK;
+         P2values[2] = FIRE_DRAG_SPATK;
+         P2values[3] = FIRE_DRAG_BLOCK;
+
+
+     }
+
+     static void SaveIceValues(int[] P2values, string[] P2data)
+     {
+         P2data[0] = ICE_DRAG_NAME;
+         P2values[0] = ICE_DRAG_HP;
+         P2values[1] = ICE_DRAG_ATK;
+         P2values[2] = ICE_DRAG_SPATK;
+         P2values[3] = ICE_DRAG_BLOCK;
+
+     }
+     static void SaveWindValues(int[] P2values, string[] P2data)
+     {
+         P2data[0] = WIND_DRAG_NAME;
+         P2values[0] = WIND_DRAG_HP;
+         P2values[1] = WIND_DRAG_ATK;
+         P2values[2] = WIND_DRAG_SPATK;
+         P2values[3] = WIND_DRAG_BLOCK;
+
+     }
+     static void SaveEarthValues(int[] P2values, string[] P2data)
+     {
+
+         P2data[0] = EARTH_DRAG_NAME;
+         P2values[0] = EARTH_DRAG_HP;
+         P2values[1] = EARTH_DRAG_ATK;
+         P2values[2] = EARTH_DRAG_SPATK;
+         P2values[3] = EARTH_DRAG_BLOCK;
+
