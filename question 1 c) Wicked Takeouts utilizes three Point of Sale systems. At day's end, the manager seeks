@@ -1,0 +1,59 @@
+question 
+Compose pseudocode for the application, prompting the
+manager to input each system's total daily sales and computing and displaying the
+average daily sales.
+
+start 
+    declaration 
+	num totalDailySales [] = new totalDailySales [10]
+	num total 
+	num average 
+	string choice = " "
+	num count 
+	
+	for (count = 0 to 10 step 1) 
+	
+	    output "enter the total daily sales for each system" 
+		input totalDailySales
+		
+		output "enter yes if you are done , no if you want to continue" 
+		input choice 
+		
+		count = count + 1 
+		    
+			if (choice = "yes") 
+			
+			    break
+				
+			endif 
+	endfor 
+	
+	for (count = 0 to totalDailySales.Length step 1) 
+	
+	    total = totalDailySales[count] + totalDailySales[count + 1] 
+		
+		count = count + 1 
+	endfor 
+	
+	    average = total / count 
+		
+		output "the average of all the systems is :" , average
+		
+	
+	output " 
+	
+stop 
+			
+	
+			
+		
+				
+		
+		
+	
+	
+	
+	
+	
+	
+	
