@@ -1,0 +1,44 @@
+Develop pseudocode for the given scenario:
+A shop owner intends to raise the prices of all items in his inventory by 6% to counter
+inflation. The product names are stored in an array named "Product," containing 5 elements,
+which holds the names of the products.
+Product array
+Rice Sugar Rooibos Tea Maize Meal Milk
+The prices of the corresponding items (in Rands) are stored in a parallel array called “Price”.
+Price array
+46.99 54.99 42.99 29.99 25.99
+Ensure your pseudocode covers the following tasks:
+1. Declare and populate both arrays with the product names and their corresponding
+prices. Utilize a loop for this purpose and note that the provided data values are for
+illustration only; avoid hardcoding them in your solution.
+2. Calculate and add 6% to the existing price for each product. Store the new prices in
+the “Price” array.
+3. Display the product names along with their new corresponding prices.
+4. Include descriptive comments in the pseudocode to explain each step thoroughly.
+
+start 
+    declaration 
+	string product [] = { Rice, Sugar, RooibosTea, MaizeMeal, Milk }
+	num price [] = { 46.99, 54.99, 42.99, 29.99, 25.99 }
+	num percentageIncrease = 6
+	count 
+	
+	// for loop to change values of each element in the array and loop 5 times to change all 5 numbers 
+	for ( count = 0 to 5 step 1) 
+	
+	    price[count] = price[count] + (percentageIncrease/100) 
+
+		count = count + 1 
+	endfor 
+	
+	//for loop to display the new price for every element in the array aswell as the product name
+	    for (count = 0 to 5 step 1) 
+		
+		    output "the new price for:", product[count] , "is:" , "R', Price[count] 
+			
+			count = count + 1 
+		endfor 
+		
+stop 
+	
+	   
