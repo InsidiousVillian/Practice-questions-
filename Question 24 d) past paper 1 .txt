@@ -1,0 +1,26 @@
+question 
+Compose pseudocode for an application that solicits a numeric input from a user and
+subsequently searches for the provided value within the array established in Q.5.3. If the
+value is discovered, the message 'Eureka!' should be exhibited
+
+start 
+
+    declaration 
+	num numbers [] =  {22, 6, 305, 99} 
+	num userNum 
+	
+	output "what number are u looking for "
+	input userNum 
+	
+	if (userNum = numbers.Length) 
+	
+	    output "Eureka" 
+	
+	else 
+	 
+	    output " number was not found " 
+	endif 
+stop 
+
+	
+	    
