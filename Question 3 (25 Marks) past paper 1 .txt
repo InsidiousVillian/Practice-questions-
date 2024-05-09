@@ -1,0 +1,64 @@
+question 
+The Sports Administration Management is tasked with monitoring each player's performance,
+requiring them to assess player performance every six months. Points are allocated as follows:
+three (3) points for each goal scored and two (2) points for a penalty.
+Utilizing the data provided in Table 2, populate the arrays accordingly. Then, develop
+pseudocode for an application that generates a report containing the following details:
+a. Total number of points scored by the player during the first six months.
+b. Average number of points scored by the player per month.
+c. Month with the lowest number of points scored by the player.
+d. Month with the highest number of points scored by the player.
+Please ensure the use of parallel arrays in your solution.
+Points 30 10 5 20 25 30
+Month Jan Feb Mar Apr May Jun
+
+start 
+    declaration 
+	num Points[] = {30, 10, 5, 20, 25, 30}
+	num months[]  = {Jan, Feb, Mar, Apr, May, Jun}
+	num average[] = new number [6] 
+	num lowest 
+	num highest 
+	num count
+	
+	for (count = 0 to 6 step 1) 
+	
+	total = points [count] + points[count + 1]
+	
+	count = count + 1
+	endfor
+	
+	for (count = 0 to 6 step 1) 
+	
+	average[count] = points[count] /30
+	
+	count  = count + 1
+	endfor 
+	
+	output "the total of all the points is:", total
+	
+	for (count = 0 to 6 step 1)
+	
+	    output "the average points in", months[count] ,"is", average[count] 
+		
+		count = count + 1 
+	endfor 
+	
+	output "the lowest scores was in the month :", months[0] ,"and", months[5] 
+	
+	output "the highest score was made in:", months[2] 
+	
+stop 
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
