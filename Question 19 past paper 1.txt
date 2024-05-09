@@ -1,0 +1,57 @@
+"A software application prompts the user to input two numbers. After the user provides the two
+numbers, the application proceeds to invoke a module to compute the average of the two
+inputs. Following the calculation of the average, another module is invoked to determine
+whether the average exceeds 75. If the average surpasses 75, a message reading
+'Congratulations, you are in the top 5' is displayed."
+Construct a flowchart for each module to be invoked. Ensure that the flowcharts accurately
+depict the logic outlined in the scenario
+
+start 
+    declaration 
+	num numberOne 
+	num numberTwo 
+	num passThreshhold = 75 
+	
+	
+	output "enter a number"
+	input numberOne
+	
+	output "enter a number"
+	input numberTwo
+	
+	//call method 
+	CalculateAverage(numberOne, numberTwo) 
+	
+	//call method 
+	CheckAverage(average) 
+	
+stop 
+
+num CalculateAverage(numberOne, numberTwo)
+
+    declaration 
+	num average
+	
+	average = (numberOne + numberTwo) / 2
+	
+	return average 
+	
+void CheckAverage(average)
+
+    // loop to check if average is higher than or = to pass threshhold 
+	
+	if (average >= passThreshhold) 
+	
+	    output "Congratulations, you are in the top 5' is displayed."
+	else 
+	
+	    output "Unfortunately you failed" 
+	endif 
+	
+   return 
+	
+	
+	
+	
+	
+	
